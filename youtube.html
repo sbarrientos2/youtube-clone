@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<!--USING FLEXBOX-->
+<html>
+
+  <head>
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="margin-bottom: 1000px; padding-top: 60px;">
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="hamburger-menu">
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
+        </a>
+      </div>
+
+      <div class="middle-section">
+        <input class="search-box" type="text" placeholder="Search">
+        <button class="search-button"> 
+          <img class="search-icon" src="icons/search.svg" alt="Search">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="Microphone">
+          <div class="tooltip">Search with your voice</div>
+        </button>  
+      </div>
+
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="Upload">
+          <div class="tooltip">Create</div>
+        </div>
+        
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="Upload">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        
+        <div class="notifications">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="Upload">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="profile-pic-icon" src="channel-pictures/me.jpg" alt="Profile Picture">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="Home">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="Home">
+        <div >Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="Home">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="Home">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="Home">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="Home">
+        <div>Library</div>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="videos-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="ThenX">
+            </a>
+            <div class="video-length">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@mkbhd"><img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-1.jpeg" alt="Marques Brownlee">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Marques Brownlee
+                  </div>
+                  <div class="channel-information-subscribers">
+                    15M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="ThenX">
+            </a>
+            <div class="video-length">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@OFFICIALTHENXSTUDIOS"><img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-3.jpeg" alt="ThenX">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    ThenX
+                  </div>
+                  <div class="channel-information-subscribers">
+                    7.62M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The SECRET to Super Human STRENGTH
+              </p>
+              <p class="video-author">
+                ThenX
+              </p>
+              <p class="video-stats">
+                20M views &#183 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Don't Laugh!">
+            </a>
+            <div class="video-length">13:17</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@markiplier"><img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-2.jpeg" alt="Markiplier">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Markiplier
+                  </div>
+                  <div class="channel-information-subscribers">
+                    34.8M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Try Not To Laugh Challenge #9
+              </p>
+              <p class="video-author">
+                Markiplier
+              </p>
+              <p class="video-stats">
+                19M views &#183 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="Cruise Ship food!">
+            </a>
+            <div class="video-length">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@InsiderBusiness"><img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="Business Insider"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-4.jpeg" alt="Markiplier">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Business Insider
+                  </div>
+                  <div class="channel-information-subscribers">
+                    7.74M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+              </p>
+              <p class="video-author">
+                Business Insider
+              </p>
+              <p class="video-stats">
+                14M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="Planes don't fly over Tibet">
+            </a>
+            <div class="video-length">10:30</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@RealLifeLore"><img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="RealLifeLore"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-5.jpeg" alt="RealLifeLore">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    RealLifeLore
+                  </div>
+                  <div class="channel-information-subscribers">
+                    6.8M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Why Planes Don't Fly Over Tibet
+              </p>
+              <p class="video-author">
+                RealLifeLore
+              </p>
+              <p class="video-stats">
+                6.6M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="Fit it in the circle!">
+            </a>
+            <div class="video-length">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@MrBeast"><img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="MrBeast"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-6.jpeg" alt="MrBeast">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    MrBeast
+                  </div>
+                  <div class="channel-information-subscribers">
+                    152M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
+              <p class="video-author">
+                MrBeast
+              </p>
+              <p class="video-stats">
+                141M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="ThenX">
+            </a>
+            <div class="video-length">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@mkbhd"><img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-1.jpeg" alt="Marques Brownlee">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Marques Brownlee
+                  </div>
+                  <div class="channel-information-subscribers">
+                    15M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="ThenX">
+            </a>
+            <div class="video-length">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@OFFICIALTHENXSTUDIOS"><img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-3.jpeg" alt="ThenX">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    ThenX
+                  </div>
+                  <div class="channel-information-subscribers">
+                    7.62M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The SECRET to Super Human STRENGTH
+              </p>
+              <p class="video-author">
+                ThenX
+              </p>
+              <p class="video-stats">
+                20M views &#183 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Don't Laugh!">
+            </a>
+            <div class="video-length">13:17</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@markiplier"><img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="Marques Photo"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-2.jpeg" alt="Markiplier">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Markiplier
+                  </div>
+                  <div class="channel-information-subscribers">
+                    34.8M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Try Not To Laugh Challenge #9
+              </p>
+              <p class="video-author">
+                Markiplier
+              </p>
+              <p class="video-stats">
+                19M views &#183 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="Cruise Ship food!">
+            </a>
+            <div class="video-length">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@InsiderBusiness"><img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="Business Insider"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-4.jpeg" alt="Markiplier">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    Business Insider
+                  </div>
+                  <div class="channel-information-subscribers">
+                    7.74M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+              </p>
+              <p class="video-author">
+                Business Insider
+              </p>
+              <p class="video-stats">
+                14M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="Planes don't fly over Tibet">
+            </a>
+            <div class="video-length">10:30</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@RealLifeLore"><img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="RealLifeLore"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-5.jpeg" alt="RealLifeLore">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    RealLifeLore
+                  </div>
+                  <div class="channel-information-subscribers">
+                    6.8M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Why Planes Don't Fly Over Tibet
+              </p>
+              <p class="video-author">
+                RealLifeLore
+              </p>
+              <p class="video-stats">
+                6.6M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="Fit it in the circle!">
+            </a>
+            <div class="video-length">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <!--We'll make these inline-block elements. It'll make them appear side by side -->
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@MrBeast"><img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="MrBeast"></a>
+              <div class="channel-information">
+                <img class="channel-information-picture" src="channel-pictures/channel-6.jpeg" alt="MrBeast">
+                <div class="channel-name-subs">
+                  <div class="channel-information-name">
+                    MrBeast
+                  </div>
+                  <div class="channel-information-subscribers">
+                    152M subscribers
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
+              <p class="video-author">
+                MrBeast
+              </p>
+              <p class="video-stats">
+                141M views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
